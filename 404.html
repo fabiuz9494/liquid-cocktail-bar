@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Senza questo file qualsiasi indirizzo storto risponde "va tutto bene" e
+     mostra la home: per una persona è spaesante, per Google sono pagine
+     fantasma. -->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, follow">
+<title>Pagina non trovata — Liquid Cocktail Bar</title>
+<meta name="description" content="La pagina cercata non esiste. Torna alla home del Liquid Cocktail Bar, sulla passeggiata di Alassio, oppure chiama lo 0182 471841.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307080F'/%3E%3Cpath d='M32 12c9 11 14 17.5 14 24a14 14 0 0 1-28 0c0-6.5 5-13 14-24z' fill='%23EF7F01'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#07080F">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;min-height:100svh;
+  background:#07080F;color:#F3F2F7;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  display:flex;align-items:center;justify-content:center;
+  padding:32px 24px;text-align:center;
+}
+.dentro{max-width:44ch;position:relative;z-index:1}
+.marchio{width:min(300px,72vw);height:auto;margin:0 auto 34px;
+  filter:drop-shadow(0 0 26px rgba(239,127,1,.35))}
+h1{font-size:clamp(28px,6vw,42px);margin:0 0 14px;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0 0 26px;line-height:1.7;color:rgba(243,242,247,.66);text-wrap:pretty}
+.tasti{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+a{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:50px;padding:13px 26px;border-radius:999px;
+  font-size:14px;font-weight:700;letter-spacing:.06em;text-decoration:none;
+}
+.pieno{background:#EF7F01;color:#140A00}
+.vuoto{border:1px solid rgba(255,255,255,.18);color:#F3F2F7}
+</style>
+</head>
+<body>
+  <div class="dentro">
+    <img src="img/logo.png" alt="Liquid Cocktail Bar" class="marchio" width="1359" height="667">
+    <h1>Questa pagina non c'è</h1>
+    <p>L'indirizzo è&nbsp;sbagliato o&nbsp;la&nbsp;pagina è&nbsp;stata spostata. Gli&nbsp;orari, le&nbsp;foto e&nbsp;il&nbsp;numero del&nbsp;bar&nbsp;sono tutti sulla&nbsp;home.</p>
+    <div class="tasti">
+      <a href="/" class="pieno">Torna alla home</a>
+      <a href="tel:+390182471841" class="vuoto">0182 471841</a>
+    </div>
+  </div>
+</body>
+</html>

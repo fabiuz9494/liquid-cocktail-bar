@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="it" data-punta="mouse">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- BOZZA: si apre col link, ma resta fuori dai risultati di ricerca finche'
+     il titolare non l'ha vista e non ha detto di si'. Quando dice di si':
+     si toglie questa riga e si manda l'indirizzo a Search Console. -->
+<meta name="robots" content="noindex, follow">
+
+<!-- Anteprima quando il link viene mandato su WhatsApp, Instagram, Facebook.
+     Misure e tipo dell'immagine dichiarati: senza, WhatsApp deve scaricare il
+     file per capire che forma ha, e se ci mette troppo mostra il link nudo.
+     L'indirizzo dell'immagine va SEMPRE per intero (https://...). -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Liquid Cocktail Bar">
+<!-- Titolo e descrizione sono scritti sulla misura di WhatsApp, che manda a capo
+     intorno ai 45 caratteri: il titolo lungo lasciava "mare" da solo su una riga
+     e la descrizione lasciava "2." da solo. Con "dalle 11.00 alle 02.00" la
+     riga finale sta intera. Se si cambiano, si ricontano. -->
+<meta property="og:title" content="Liquid Cocktail Bar &mdash; Alassio">
+<meta property="og:description" content="Cocktail, musica dal vivo e tavoli fuori sulla passeggiata di Alassio. Aperto tutti i giorni dalle 11.00 alle 02.00.">
+<meta property="og:image" content="https://fabiuz9494.github.io/liquid-cocktail-bar/img/og.jpg?v=1">
+<meta property="og:image:secure_url" content="https://fabiuz9494.github.io/liquid-cocktail-bar/img/og.jpg?v=1">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Il gruppo del Liquid Cocktail Bar sotto l'insegna del locale, ad Alassio">
+<meta property="og:url" content="https://fabiuz9494.github.io/liquid-cocktail-bar/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fabiuz9494.github.io/liquid-cocktail-bar/img/og.jpg?v=1">
+<meta name="twitter:image:alt" content="Il gruppo del Liquid Cocktail Bar sotto l'insegna del locale, ad Alassio">
+<link rel="canonical" href="https://fabiuz9494.github.io/liquid-cocktail-bar/">
+<!-- icona della scheda del browser: la goccia, nell'arancione del loro logo -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307080F'/%3E%3Cpath d='M32 12c9 11 14 17.5 14 24a14 14 0 0 1-28 0c0-6.5 5-13 14-24z' fill='%23EF7F01'/%3E%3C/svg%3E">
+<title>Liquid Cocktail Bar · Alassio, passeggiata a mare</title>
+<meta name="description" content="Liquid Cocktail Bar, sulla passeggiata Dino Grollero ad Alassio. Cocktail, musica dal vivo e tavoli fuori, tutti i giorni dalle 11.00 alle 02.00.">
+<meta name="theme-color" content="#07080F">
+
+<!-- ==========================================================================
+     LIQUID COCKTAIL BAR — Passeggiata Dino Grollero 32, 17021 Alassio (SV)
+     Bozza fatta da Insegna, 20/08/2026.
+
+     DA DOVE VENGONO I CONTENUTI
+       - nome, indirizzo, telefono, orari, voto (4,5 su 453) e i tre servizi
+         segnalati (tavoli all'aperto, ottimi cocktail, musica dal vivo):
+         dalla scheda Google del bar. Copiati, non riscritti.
+       - foto e logo: file del locale (Instagram @liquidcocktailbar).
+       - le didascalie dicono soltanto quello che si vede nella foto: i nomi
+         veri dei piatti e dei cocktail non li sappiamo ancora.
+       - il titolare non ha ancora parlato: dove servono le sue parole c'e' un
+         commento MODIFICA QUI, e quel pezzo resta fuori.
+
+     PERCHE' E' FATTA COSI'
+       Bar di sera, cocktail e musica: fondo nero e luci al neon, prese dai
+       colori veri del locale (il fucsia della volta, il turchese del bancone)
+       e dai due colori del loro logo — blu #012198 e arancione #EF7F01.
+       L'arancione pieno sta su un tasto solo, quello che fa chiamare.
+
+     PRIMA DI ANDARE ONLINE SUL SERIO
+       1) togliere <meta name="robots" content="noindex"> qui sopra
+       2) la carta dei cocktail e cosa si mangia, con i prezzi
+       3) i giorni della musica dal vivo
+       4) le tre recensioni di esempio -> tre vere prese da Google
+       5) partita IVA e ragione sociale nel footer
+     ========================================================================== -->
+
+<style>
+/* ---------- CARATTERI ----------
+   Stanno nella cartella font/ di questo sito: il browser di chi visita
+   non contatta Google, quindi il suo indirizzo non esce di qui.
+   Archivo Black = i titoloni. Chakra Petch = le etichette e i numeri (e' il
+   taglio squadrato che da' il tono "notte"). Figtree = il testo da leggere. */
+@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;
+  src:url('font/archivo-black-400-latin-ext-297007.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;
+  src:url('font/archivo-black-400-latin-45f5d4.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Chakra Petch';font-style:normal;font-weight:600;font-display:swap;
+  src:url('font/chakra-petch-600-latin-ext-028969.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Chakra Petch';font-style:normal;font-weight:600;font-display:swap;
+  src:url('font/chakra-petch-600-latin-7a4938.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Chakra Petch';font-style:normal;font-weight:700;font-display:swap;
+  src:url('font/chakra-petch-700-latin-ext-5771d1.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Chakra Petch';font-style:normal;font-weight:700;font-display:swap;
+  src:url('font/chakra-petch-700-latin-893df0.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:400;font-display:swap;
+  src:url('font/figtree-400-latin-ext-467cc9.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:400;font-display:swap;
+  src:url('font/figtree-400-latin-3c512d.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:500;font-display:swap;
+  src:url('font/figtree-500-latin-ext-467cc9.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:500;font-display:swap;
+  src:url('font/figtree-500-latin-3c512d.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:600;font-display:swap;
+  src:url('font/figtree-600-latin-ext-467cc9.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:600;font-display:swap;
+  src:url('font/figtree-600-latin-3c512d.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+/* ---------- I COLORI ----------
+   Presi dal loro logo (blu e arancione) e dalle luci vere del locale
+   (il fucsia della volta, il turchese sopra il bancone). */
+:root{
+  --nero:#07080F;
+  --notte:#0C0E1A;
+  --carta:#12141F;
+  --bordo:rgba(255,255,255,.10);
+  --chiaro:#F3F2F7;
+  --fioco:rgba(243,242,247,.66);
+  --fioco2:rgba(243,242,247,.46);
+  --arancio:#EF7F01;
+  --arancio-luce:#FFA83C;
+  --blu:#012198;
+  --blu-luce:#3556FF;
+  --ciano:#35E5D4;
+  --magenta:#FF3BB0;
+  --display:'Archivo Black',Impact,'Arial Black',sans-serif;
+  --tecnico:'Chakra Petch',ui-monospace,'Segoe UI',sans-serif;
+  --testo:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --raggio:16px;
+  --fascia:clamp(34px,3.4vw,48px);   /* respiro fra una sezione e l'altra */
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{
+  margin:0;background:var(--nero);color:var(--chiaro);
+  font-family:var(--testo);font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;               /* clip e non hidden: hidden rompe lo sticky */
+  padding-bottom:0;
+}
+/* height:auto e' obbligatorio, non estetica: senza, vale l'attributo height="…"
+   scritto nel tag (che ci va, se no la pagina salta mentre carica) e il browser
+   ignora l'aspect-ratio del CSS — le foto quadrate diventano colonne alte 1000px */
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{text-wrap:pretty;margin:0}
+
+.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+.stretto{width:min(880px,calc(100% - 40px));margin-inline:auto}
+
+/* comparsa allo scorrimento: sta sul contenuto, MAI sulla fascia, se no
+   scivolando scopre il fondo del corpo e sembra una riga nera fra due sezioni */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .hero-luci i,.hero-luci b,.viva{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- ETICHETTE, ROMBI, TITOLI ---------- */
+.etichetta{
+  font-family:var(--tecnico);font-weight:600;font-size:.78rem;
+  letter-spacing:.20em;text-transform:uppercase;color:var(--arancio-luce);
+  display:inline-flex;align-items:center;gap:10px;margin:0 0 14px;
+}
+.etichetta::before{content:"";width:7px;height:7px;background:currentColor;transform:rotate(45deg);flex:none}
+.etichetta.ciano{color:var(--ciano)}
+.etichetta.magenta{color:var(--magenta)}
+
+h2{
+  font-family:var(--display);font-weight:400;line-height:1.02;
+  font-size:clamp(2rem,5.2vw,3.4rem);letter-spacing:-.015em;
+}
+
+/* ---------- LE PAROLE CHE CAMBIANO COLORE ----------
+   Il colore non sta sul testo: e' un gradiente ritagliato DENTRO la forma
+   delle lettere, e a scorrere e' il gradiente. I colori sono i tre del
+   locale (arancione del logo, fucsia della volta, turchese del bancone).
+   Fuori dal @supports resta un colore pieno: se un browser vecchio non sa
+   ritagliare il gradiente nel testo, la parola resta arancione e leggibile —
+   senza questa rete sarebbe trasparente, cioe' invisibile. */
+.viva{color:var(--arancio-luce)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .viva{
+    /* Il gradiente si RIPETE mentre scorre, quindi la sua fine tocca il suo
+       inizio: se i due colori sono diversi, in quel punto nasce una riga netta
+       che attraversa le lettere (misurata: 52 gradi di salto di tinta).
+       Qui comincia e finisce con lo stesso arancione, e i colori sono
+       specchiati: la giunzione cade fra arancione e arancione e sparisce.
+       Dritto (90deg) e non inclinato, se no la giunzione torna in diagonale. */
+    /* il viola in mezzo non e' un vezzo: fra il fucsia e il turchese il
+       browser passa per un lilla slavato, e le lettere li' si spengono */
+    background-image:linear-gradient(90deg,
+      var(--arancio-luce) 0%, var(--magenta) 17%, #8B5CF6 33%, var(--ciano) 50%,
+      #8B5CF6 67%, var(--magenta) 83%, var(--arancio-luce) 100%);
+    /* 200% con la corsa da 0 a 200% e' l'unica coppia che trasla di UN periodo
+       esatto: cosi' quando l'animazione ricomincia il disegno e' identico e non
+       si vede nessuno scatto */
+    background-size:200% 100%;
+    -webkit-background-clip:text;background-clip:text;
+    color:transparent;
+    /* con le lettere trasparenti l'ombra del testo si vedrebbe DENTRO le
+       lettere: l'ombra va data alla forma, con un filtro */
+    text-shadow:none;
+    filter:drop-shadow(0 2px 5px rgba(0,0,0,.55));
+    animation:tinta 9s linear infinite;
+  }
+}
+@keyframes tinta{from{background-position:0 center}to{background-position:200% center}}
+h3{font-family:var(--tecnico);font-weight:700;font-size:1.06rem;letter-spacing:.04em}
+.occhiello{color:var(--fioco);max-width:62ch;margin-top:16px;font-size:1.06rem}
+
+/* ---------- TESTATA ---------- */
+#hdr{
+  /* fixed e non sticky: da sticky la barra OCCUPA il suo spazio, l'apertura
+     comincia 70 px piu' sotto e nella fascia in alto non c'e' niente da
+     illuminare — le luci le passavano dietro senza vedersi. Galleggiando,
+     l'apertura parte da zero e le macchie le scorrono dietro davvero.
+     Lo spazio che la barra non occupa piu' lo rimette il padding dell'apertura. */
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  display:flex;align-items:center;gap:18px;
+  padding:12px clamp(16px,3vw,28px);
+  /* trasparente sopra l'apertura: cosi' le luci si vedono passare anche
+     dietro al marchio, invece di sbattere contro una banda scura.
+     Il fondo pieno torna appena si scorre (.stuck), dove sotto ci sono le
+     sezioni e il testo della barra deve staccare. */
+  background:transparent;
+  transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;
+  border-bottom:1px solid transparent;
+}
+/* niente banda dietro, quindi il marchio e le scritte si difendono da soli:
+   un'ombra stretta per staccare e una larga che fa da alone */
+.marchio img{filter:drop-shadow(0 1px 2px rgba(0,0,0,.85)) drop-shadow(0 4px 14px rgba(0,0,0,.6))}
+#hdr .nav a,#hdr .hdr-tel{text-shadow:0 1px 3px rgba(0,0,0,.8)}
+#hdr.stuck{background:rgba(7,8,15,.94);border-bottom-color:var(--bordo);backdrop-filter:blur(14px)}
+.marchio{display:flex;align-items:center;min-height:44px;flex:none}
+.marchio img{height:30px;width:auto}
+/* Tre tasti in alto a destra, e ci sono anche sul telefono: sotto ai 900 px
+   diventano pastiglie piccole (in cima c'era solo il marchio e mezza barra
+   vuota), sopra tornano voci di menu con il filetto che cresce. Tre e non
+   quattro perche' a 390 px il quarto non ci starebbe senza schiacciarli. */
+.nav{display:flex;margin-left:auto;gap:6px;align-items:center}
+.nav a{
+  font-family:var(--tecnico);font-weight:700;font-size:.7rem;letter-spacing:.06em;
+  text-transform:uppercase;text-decoration:none;color:var(--chiaro);
+  display:inline-flex;align-items:center;justify-content:center;
+  /* niente riquadro intorno alle scritte: solo il testo. I 44 px di altezza e
+     il riempimento ai lati restano, ma INVISIBILI — sono l'area da toccare col
+     dito, che deve esserci anche quando non si vede (regola 30). */
+  min-height:44px;padding:0 8px;position:relative;
+  text-shadow:0 1px 3px rgba(0,0,0,.85),0 2px 10px rgba(0,0,0,.6);
+  white-space:nowrap;
+}
+/* sul telefono la parola corta, sul computer quella per esteso: a 375 px
+   "DA MANGIARE" si spezzava in due righe dentro al tasto */
+.nav .lungo{display:none}
+@media (min-width:900px){
+  .nav .lungo{display:inline}
+  .nav .corto{display:none}
+}
+@media (min-width:900px){
+  .nav{gap:clamp(14px,2vw,26px)}
+  .nav a{
+    font-size:.82rem;letter-spacing:.14em;font-weight:600;color:var(--fioco);padding:0;
+  }
+  .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:12px;height:1px;background:var(--arancio);transition:right .3s ease}
+  html[data-punta="mouse"] .nav a:hover{color:var(--chiaro)}
+  html[data-punta="mouse"] .nav a:hover::after{right:0}
+}
+.hdr-tel{display:none}
+@media (min-width:900px){
+  .nav{display:flex}
+  .hdr-tel{
+    display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:0 18px;
+    border:1px solid rgba(239,127,1,.55);border-radius:999px;text-decoration:none;
+    font-family:var(--tecnico);font-weight:700;font-size:.86rem;letter-spacing:.06em;
+    color:var(--arancio-luce);transition:background .3s ease,color .3s ease;
+    white-space:nowrap;   /* a 1024 px il numero andava a capo dentro al tasto */
+  }
+  .nav{gap:clamp(14px,2vw,26px)}
+  html[data-punta="mouse"] .hdr-tel:hover{background:rgba(239,127,1,.14)}
+  .marchio img{height:34px}
+}
+
+/* ---------- APERTURA ---------- */
+/* Il padding in cima tiene la pastiglia sotto la barra che galleggia, e la
+   mette a meta' strada fra il bordo alto della pagina e il marchio: il resto
+   dello spazio va sotto di lei (vedi il margine dell'h1), non sopra. */
+.hero{position:relative;overflow:hidden;padding:clamp(74px,9vw,94px) 0 0}
+.hero-luci{position:absolute;inset:0;z-index:0;pointer-events:none}
+/* ---------- LE LUCI CHE GIRANO ----------
+   Prima ogni luce seguiva UN percorso a tappe: fra una tappa e l'altra andava
+   dritta, e a ogni tappa girava di scatto. Da lontano si vedeva il poligono.
+   Adesso ogni luce ha due dondolii indipendenti — l'elemento di fuori la porta
+   a destra e a sinistra, quello di dentro su e giu' — ciascuno con il suo
+   tempo. Due dondolii con tempi che non vanno d'accordo (19 e 23 secondi, 13 e
+   17...) non tornano mai allo stesso punto insieme: la strada che ne esce e'
+   una curva continua che non si ripete e non ha nessun angolo.
+   `ease-in-out` + `alternate` = rallenta agli estremi e riparte piano, come
+   una cosa che ha un peso. */
+.hero-luci i,.hero-luci b{
+  position:absolute;display:block;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  animation-timing-function:cubic-bezier(.45,0,.55,1);   /* niente scatti agli estremi */
+}
+.hero-luci i{inset:0;will-change:translate,scale,opacity}
+.hero-luci b{
+  border-radius:50%;
+  /* la macchia sfocata viene disegnata UNA volta e poi solo spostata: il
+     browser la tiene come strato a sé e la muove sulla scheda video, senza
+     rifare il calcolo della sfocatura a ogni fotogramma */
+  filter:blur(70px);will-change:translate;
+}
+/* La macchia: misura, colore e da dove parte. Il viaggio sta nei keyframes. */
+.luce-1 b{width:min(62vw,560px);aspect-ratio:1;background:var(--magenta);top:-16%;left:-26%}
+.luce-2 b{width:min(58vw,520px);aspect-ratio:1;background:var(--ciano);top:6%;right:-26%}
+.luce-3 b{width:min(70vw,640px);aspect-ratio:1;background:var(--blu-luce);bottom:-30%;left:-8%}
+/* la piccola arancione non parte dal centro: li' sta il marchio grande */
+.luce-4 b{width:min(40vw,340px);aspect-ratio:1;background:var(--arancio);top:52%;right:-4%}
+
+/* i tempi: otto numeri primi diversi, quattro per il moto orizzontale e
+   quattro per quello verticale. Piu' i ritardi negativi, che le fanno partire
+   ognuna da un punto suo invece che tutte insieme dal via. */
+.luce-1{animation-name:vaiX;animation-duration:19s;animation-delay:-5s}
+.luce-1 b{animation-name:vaiY1;animation-duration:23s;animation-delay:-11s}
+.luce-2{animation-name:tornaX;animation-duration:13s;animation-delay:-9s}
+.luce-2 b{animation-name:vaiY2;animation-duration:17s;animation-delay:-3s}
+.luce-3{animation-name:vaiX3;animation-duration:29s;animation-delay:-13s}
+.luce-3 b{animation-name:vaiY3;animation-duration:11s;animation-delay:-7s}
+.luce-4{animation-name:tornaX4;animation-duration:17s;animation-delay:-2s}
+.luce-4 b{animation-name:vaiY4;animation-duration:13s;animation-delay:-6s}
+
+/* IL MOTO ORIZZONTALE porta anche l'accensione: piena quando la luce e' su un
+   bordo, smorzata quando passa davanti al centro — che e' dove stanno il
+   marchio e le scritte. Cosi' il centro resta pulito senza doverlo evitare. */
+/* ATTENZIONE alle tappe di mezzo: se dichiarano anche `translate`, il moto si
+   spezza in segmenti e tornano gli spigoli. Qui le tappe intermedie toccano
+   SOLO l'opacita': `translate` resta definito ai due soli estremi, quindi
+   scorre come un unico dondolio morbido. La valle di luce spenta e' larga
+   (dal 44% al 70%) perche' il momento in cui la macchia passa davanti al
+   centro cade in un punto diverso sul telefono e sul computer: una valle larga
+   li copre tutti e due senza doverli calcolare uno per uno. */
+@keyframes vaiX{
+  0%  {translate:0 0;scale:1;opacity:.42}
+  44% {opacity:.12} 70%{opacity:.12}
+  100%{translate:88vw 0;scale:1.10;opacity:.44}
+}
+@keyframes tornaX{
+  0%  {translate:0 0;scale:1;opacity:.36}
+  44% {opacity:.10} 70%{opacity:.10}
+  100%{translate:-84vw 0;scale:1.12;opacity:.38}
+}
+@keyframes vaiX3{
+  0%  {translate:0 0;scale:1;opacity:.38}
+  40% {opacity:.14} 66%{opacity:.14}
+  100%{translate:76vw 0;scale:1.14;opacity:.40}
+}
+/* corsa lunga apposta: la piccola arancione e' quella che curvava piu' stretta
+   (25° per passo, misurati), e con una corsa piu' lunga la curva si distende */
+@keyframes tornaX4{
+  0%  {translate:0 0;scale:1;opacity:.28}
+  42% {opacity:.09} 68%{opacity:.09}
+  100%{translate:-88vw 0;scale:1.18;opacity:.30}
+}
+/* IL MOTO VERTICALE: solo su e giu', con corse diverse. Incrociato con quello
+   orizzontale e' quello che rende la strada imprevedibile. */
+@keyframes vaiY1{ 0%{translate:0 0} 100%{translate:0 42vh} }
+@keyframes vaiY2{ 0%{translate:0 6vh} 100%{translate:0 52vh} }
+@keyframes vaiY3{ 0%{translate:0 0} 100%{translate:0 -26vh} }
+@keyframes vaiY4{ 0%{translate:0 8vh} 100%{translate:0 -48vh} }
+/* Quattro GIRI CHIUSI: la tappa 100% e' identica alla 0%, quindi ogni luce
+   torna al punto di partenza dopo aver attraversato lo schermo, e non si vede
+   nessuno scatto quando riparte. Ognuna fa una strada diversa — una gira in
+   senso orario, una al contrario, una taglia in diagonale — e le durate sono
+   numeri primi (11, 13, 17, 19): i giri non tornano mai in fase, cosi' la
+   combinazione non si ripete quasi mai.
+   Gli spostamenti sono in vw/vh, cioe' in frazioni di SCHERMO e non della
+   macchia: e' questo che le fa viaggiare da una parte all'altra invece di
+   dondolare sul posto. */
+/* appena l'apertura esce dallo schermo le luci si fermano: muovere roba che
+   nessuno vede consuma batteria e basta */
+.hero-luci.ferme i,.hero-luci.ferme b{animation-play-state:paused}
+/* Velo scuro sopra le luci: le scritte devono staccare sempre.
+   Prima scuriva i BORDI, e quindi spegneva le luci proprio in cima, dove
+   passano dietro alla barra del menu. Adesso e' un'ombra ovale che sta solo
+   dietro al blocco delle scritte e lascia libere la fascia alta e i lati:
+   il testo stacca uguale, e le luci si vedono passare fin sopra al marchio. */
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    radial-gradient(66% 54% at 50% 44%,rgba(7,8,15,.66),rgba(7,8,15,0) 78%),
+    linear-gradient(to bottom,rgba(7,8,15,0),rgba(7,8,15,.35) 88%);
+}
+.hero-in{position:relative;z-index:2;text-align:center;padding-bottom:clamp(26px,4vw,40px)}
+
+.stato{
+  display:inline-flex;align-items:center;gap:10px;min-height:38px;
+  padding:0 16px;border-radius:999px;border:1px solid var(--bordo);
+  background:rgba(18,20,31,.72);backdrop-filter:blur(8px);
+  font-family:var(--tecnico);font-weight:600;font-size:.8rem;letter-spacing:.10em;
+  text-transform:uppercase;color:var(--chiaro);
+}
+.pallino{width:9px;height:9px;border-radius:50%;background:var(--ciano);flex:none;
+  box-shadow:0 0 0 0 rgba(53,229,212,.6);animation:battito 2.4s infinite}
+@keyframes battito{
+  0%{box-shadow:0 0 0 0 rgba(53,229,212,.55)}
+  70%{box-shadow:0 0 0 11px rgba(53,229,212,0)}
+  100%{box-shadow:0 0 0 0 rgba(53,229,212,0)}
+}
+[data-stato="chiuso"] .pallino{background:var(--arancio-luce);animation:none}
+@media (prefers-reduced-motion:reduce){.pallino{animation:none}}
+
+h1{margin:clamp(52px,9vw,86px) 0 0;display:flex;flex-direction:column;align-items:center;gap:20px}
+h1 img{
+  width:min(78vw,460px);height:auto;
+  filter:drop-shadow(0 0 26px rgba(239,127,1,.42)) drop-shadow(0 6px 22px rgba(0,0,0,.55));
+}
+.h1-sotto{
+  font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,4.6vw,2.5rem);
+  line-height:1.1;letter-spacing:-.01em;max-width:21ch;   /* a 16ch il testo usciva dal suo blocco */
+  text-shadow:0 1px 2px rgba(0,0,0,.6),0 8px 30px rgba(0,0,0,.5);
+}
+.hero-riga{margin:18px auto 0;max-width:52ch;color:var(--fioco);font-size:1.05rem}
+
+.tasti{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.tasto{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;padding:0 24px;border-radius:999px;text-decoration:none;
+  font-family:var(--tecnico);font-weight:700;font-size:.94rem;letter-spacing:.06em;
+  border:1px solid transparent;transition:transform .25s ease,box-shadow .3s ease,background .3s ease;
+}
+/* l'UNICO colore pieno di tutta la pagina sta qui: il tasto che fa chiamare */
+.tasto-pieno{background:var(--arancio);color:#140A00;box-shadow:0 10px 34px rgba(239,127,1,.30)}
+html[data-punta="mouse"] .tasto-pieno:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(239,127,1,.44)}
+.tasto-vuoto{border-color:var(--bordo);color:var(--chiaro);background:rgba(255,255,255,.05)}
+html[data-punta="mouse"] .tasto-vuoto:hover{background:rgba(255,255,255,.11);transform:translateY(-2px)}
+.tasto svg{width:19px;height:19px;flex:none}
+
+.voto{
+  display:inline-flex;align-items:center;gap:10px;margin-top:22px;min-height:44px;
+  font-family:var(--tecnico);font-weight:600;font-size:.86rem;letter-spacing:.06em;
+  color:var(--fioco);text-decoration:none;
+}
+.voto b{color:var(--chiaro);font-size:1.1rem;font-weight:700}
+.stelle{color:var(--arancio-luce);letter-spacing:.08em}
+
+/* la striscia di foto che scorre sotto l'apertura */
+/* La striscia scorre da sola MA si puo' anche trascinare col dito: e' una
+   barra di scorrimento vera (overflow-x), con la barra grigia nascosta, e a
+   farla camminare e' il JavaScript. Prima era un'animazione CSS ferma da
+   `:hover`, e sul telefono il "mouse sopra" rimane appiccicato dopo il tocco:
+   la striscia si fermava per sempre al primo dito (regola 80). */
+.striscia{position:relative;z-index:2;margin-top:6px;
+  overflow-x:auto;overflow-y:hidden;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;      /* trascinando non si trascina la pagina */
+  /* la pagina ha scroll-behavior:smooth per i salti alle sezioni, e qui si
+     eredita: ogni spostamento della striscia verrebbe "smussato" e il dito
+     sembrerebbe scivolare sul ghiaccio. Qui lo scorrimento e' immediato. */
+  scroll-behavior:auto;
+  cursor:grab;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+.striscia::-webkit-scrollbar{display:none}
+.striscia.presa{cursor:grabbing}
+.striscia-in{display:flex;gap:12px;width:max-content}
+.striscia figure{margin:0;flex:none;border-radius:12px;overflow:hidden;border:1px solid var(--bordo);background:var(--carta)}
+.striscia img{height:132px;width:auto;object-fit:cover}
+@media (min-width:760px){.striscia img{height:168px}}
+
+/* ---------- LA FASCIA "ADESSO" ---------- */
+.adesso{border-block:1px solid var(--bordo);background:var(--notte)}
+.adesso .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;padding:18px 0}
+.adesso-testo{display:flex;flex-direction:column}
+#adesso-riga{font-family:var(--tecnico);font-weight:700;font-size:1.06rem;letter-spacing:.02em}
+#adesso-sotto{color:var(--fioco2);font-size:.94rem}
+.adesso-orario{margin-left:auto;display:flex;align-items:center;gap:10px;
+  font-family:var(--tecnico);font-weight:600;font-size:.88rem;letter-spacing:.10em;
+  text-transform:uppercase;color:var(--fioco)}
+.adesso-orario b{color:var(--chiaro);font-size:1.02rem}
+[data-stato="chiuso"] #adesso-riga{color:var(--arancio-luce)}
+
+/* ---------- SEZIONI ---------- */
+section{padding-block:var(--fascia)}
+.sez-scura{background:var(--nero)}
+.sez-notte{background:var(--notte)}
+.testa-sez{margin-bottom:clamp(22px,2.6vw,34px)}
+
+/* --- al bancone --- */
+.bancone-griglia{display:grid;gap:16px;grid-template-columns:1fr}
+.foto{margin:0;border-radius:var(--raggio);overflow:hidden;border:1px solid var(--bordo);background:var(--carta);position:relative}
+/* height:100% qui faceva prendere all'immagine tutta l'altezza del riquadro:
+   la didascalia finiva sotto il bordo e overflow:hidden se la mangiava */
+.foto img{width:100%;height:auto;object-fit:cover}
+.foto figcaption{
+  padding:11px 14px;font-size:.86rem;color:var(--fioco2);
+  border-top:1px solid var(--bordo);background:rgba(7,8,15,.5);
+}
+/* I limiti di larghezza valgono SEMPRE, non solo da 820 px in su: alle
+   larghezze di mezzo (un tablet, una finestra a mezzo schermo) la colonna e'
+   ancora una sola e larga 700-760 px, e senza limite il browser ingrandirebbe
+   la foto del doppio. Il numero e' meta' dei pixel veri del file. */
+.foto-cocktail{max-width:450px;margin-inline:auto}
+.foto-cocktail img{aspect-ratio:900/837}
+.foto-bancone{max-width:340px;margin-inline:auto}
+.foto-bancone img{aspect-ratio:680/453}
+.foto-barista{max-width:320px;margin-inline:auto}   /* il file e' largo 640: oltre i 320 il browser ingrandirebbe */
+.foto-barista img{aspect-ratio:640/352}
+.bancone-col{display:grid;gap:16px;align-content:start}
+.nota{
+  border:1px dashed rgba(255,255,255,.18);border-radius:var(--raggio);
+  padding:18px 20px;color:var(--fioco);background:rgba(255,255,255,.02);font-size:.98rem;
+}
+.nota b{color:var(--chiaro);font-family:var(--tecnico);letter-spacing:.03em}
+
+/* --- la carta che si apre e si chiude ---
+   <details> e <summary> sono di serie nel browser: si aprono e si chiudono da
+   soli, senza una riga di JavaScript, e il lettore di schermo sa gia' dirlo. */
+.carta{border:1px solid var(--bordo);border-radius:var(--raggio);background:var(--carta);overflow:hidden}
+.carta summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:center;gap:12px;min-height:56px;padding:0 18px;
+  font-family:var(--tecnico);font-weight:700;font-size:.95rem;letter-spacing:.06em;
+  color:var(--chiaro);
+}
+.carta summary::-webkit-details-marker{display:none}
+.carta summary .rombo{width:8px;height:8px;background:var(--arancio-luce);transform:rotate(45deg);flex:none}
+/* la freccetta gira quando la carta e' aperta: si capisce che si richiude */
+.carta summary .frec{margin-left:auto;width:16px;height:16px;transition:transform .3s ease;color:var(--fioco)}
+.carta[open] summary .frec{transform:rotate(180deg)}
+html[data-punta="mouse"] .carta summary:hover{background:rgba(255,255,255,.05)}
+.carta-in{padding:4px 18px 18px;border-top:1px solid var(--bordo)}
+.carta-in dl{margin:0;display:grid;gap:14px;padding-top:14px}
+.carta-in dt{font-family:var(--tecnico);font-weight:700;font-size:.95rem;letter-spacing:.03em;color:var(--chiaro)}
+.carta-in dd{margin:2px 0 0;color:var(--fioco);font-size:.92rem;line-height:1.5}
+.carta-in .avviso{
+  margin-top:16px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.16);
+  color:var(--fioco2);font-size:.84rem;
+}
+@media (min-width:820px){
+  /* colonne alla misura VERA dei file (900 e 680 px di larghezza): a colonne
+     elastiche il bancone veniva disegnato a 530 px, cioe' ingrandito 1,5 volte */
+  .bancone-griglia{grid-template-columns:450px 320px;justify-content:start;gap:22px;align-items:start}
+  /* nella colonna larga 320 i tre riquadri si allineano da soli: via il centraggio */
+  .foto-cocktail,.foto-bancone,.foto-barista{margin-inline:0}
+}
+
+/* --- da mangiare --- */
+.tavola-alto{display:grid;gap:20px;grid-template-columns:1fr;align-items:center;margin-bottom:22px}
+.foto-mare{max-width:460px}
+.foto-mare img{aspect-ratio:1}
+@media (min-width:820px){.tavola-alto{grid-template-columns:1fr minmax(0,460px);gap:34px}}
+
+.piatti{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.piatti figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--bordo);background:var(--carta);position:relative}
+.piatti img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
+html[data-punta="mouse"] .piatti figure:hover img{transform:scale(1.05)}
+/* la didascalia sta SOPRA la foto: ci vuole il velo, se no sparisce sul chiaro */
+.piatti figcaption{
+  position:absolute;left:0;right:0;bottom:0;z-index:2;
+  padding:26px 12px 11px;font-size:.82rem;line-height:1.35;color:#fff;
+  background:linear-gradient(to top,rgba(4,4,9,.90),rgba(4,4,9,.55) 45%,rgba(4,4,9,0));
+  text-shadow:0 1px 2px rgba(0,0,0,.9),0 4px 16px rgba(0,0,0,.7);
+}
+@media (min-width:760px){.piatti{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}}
+
+/* --- il locale --- */
+.mosaico{
+  display:grid;grid-auto-flow:column;grid-auto-columns:190px;gap:12px;
+  overflow-x:auto;scroll-snap-type:x proximity;
+  padding-inline:20px;margin-inline:-20px;scroll-padding-left:20px;   /* se no la prima foto si incolla al bordo */
+  scrollbar-width:none;
+}
+.mosaico::-webkit-scrollbar{display:none}
+.mosaico figure{margin:0;scroll-snap-align:start;border-radius:14px;overflow:hidden;border:1px solid var(--bordo);background:var(--carta)}
+.mosaico img{width:100%;aspect-ratio:382/510;object-fit:cover}
+.mosaico figcaption{padding:10px 12px;font-size:.82rem;color:var(--fioco2);border-top:1px solid var(--bordo)}
+@media (min-width:760px){
+  .mosaico{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,186px));justify-content:center;
+    overflow:visible;padding-inline:0;margin-inline:0}
+}
+
+/* --- le serate --- */
+.serate{display:grid;gap:22px;grid-template-columns:1fr;align-items:center}
+.foto-staff{max-width:700px;margin-inline:auto}   /* meta' dei 1400 px del file */
+.foto-staff img{aspect-ratio:1400/934}
+@media (min-width:860px){.serate{grid-template-columns:minmax(0,1fr) minmax(0,700px);gap:34px}}
+
+/* --- recensioni --- */
+.voto-grande{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px}
+.voto-num{font-family:var(--display);font-size:clamp(3.2rem,10vw,5rem);line-height:.9;color:var(--arancio-luce)}
+.voto-lato{font-family:var(--tecnico);font-weight:600;letter-spacing:.08em;color:var(--fioco);text-transform:uppercase;font-size:.86rem}
+.recensioni{display:grid;gap:14px;grid-template-columns:1fr;margin-top:26px}
+.rec{border:1px solid var(--bordo);border-radius:var(--raggio);padding:20px;background:var(--carta)}
+.rec p{color:var(--fioco);font-size:.98rem}
+.rec .chi{margin-top:12px;font-family:var(--tecnico);font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--fioco2)}
+@media (min-width:800px){.recensioni{grid-template-columns:repeat(3,1fr)}}
+
+/* --- dove siamo --- */
+.dove{display:grid;gap:26px;grid-template-columns:1fr}
+@media (min-width:860px){.dove{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px}}
+/* align-content:start e' quello che tiene i tasti alti 46 px: senza, la griglia
+   allunga le sue righe fino a riempire la colonna, e i tasti dentro al flex si
+   stirano con lei — diventano pastiglie alte il triplo delle scritte */
+.dati{display:grid;gap:22px;align-content:start}
+.dato{display:flex;gap:14px;align-items:flex-start}
+.dato svg{width:20px;height:20px;flex:none;margin-top:4px;color:var(--arancio-luce)}
+.dato b{display:block;font-family:var(--tecnico);font-weight:700;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fioco2)}
+/* sottolineatura vera e non bordo: il bordo, su un indirizzo che va a capo,
+   tira una riga larga quanto tutto il blocco anche dove non c'e' testo */
+.dato a{color:var(--chiaro);text-decoration:underline;text-decoration-thickness:1px;
+  text-decoration-color:rgba(239,127,1,.6);text-underline-offset:5px}
+.orari{width:100%;border-collapse:collapse;font-size:.98rem}
+.orari th{text-align:left;font-family:var(--tecnico);font-weight:700;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fioco2);padding-bottom:10px}
+.orari td{padding:9px 0;border-top:1px solid var(--bordo);color:var(--fioco)}
+.orari td:last-child{text-align:right;font-family:var(--tecnico);font-weight:600;color:var(--chiaro)}
+.orari tr.oggi td{color:var(--chiaro)}
+.orari tr.oggi td:first-child::before{content:"";display:inline-block;width:6px;height:6px;background:var(--ciano);transform:rotate(45deg);margin-right:9px;vertical-align:middle}
+.social{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:22px}
+.social a{
+  display:inline-flex;align-items:center;gap:9px;min-height:46px;padding:0 18px;
+  border:1px solid var(--bordo);border-radius:999px;text-decoration:none;background:rgba(255,255,255,.04);
+  font-family:var(--tecnico);font-weight:600;font-size:.86rem;letter-spacing:.05em;color:var(--chiaro);
+  transition:background .3s ease,transform .25s ease;
+}
+html[data-punta="mouse"] .social a:hover{background:rgba(255,255,255,.10);transform:translateY(-2px)}
+.social svg{width:18px;height:18px}
+
+/* ---------- PIEDE ---------- */
+footer{border-top:1px solid var(--bordo);background:var(--nero);padding:30px 0 26px}
+.piede{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+.piede img{height:28px;width:auto;opacity:.9}
+.piede small{color:var(--fioco2);font-size:.84rem;line-height:1.7}
+
+/* ---------- LA FOTO APERTA IN GRANDE ----------
+   <dialog> e' di serie nel browser: si apre sopra tutto (anche sopra la barra
+   in fondo, senza doverle rincorrere lo z-index), si chiude col tasto Esc e
+   riporta il fuoco dove stava. Nessuna libreria. */
+.lente{
+  border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;
+  width:100%;height:100%;overflow:hidden;
+}
+.lente::backdrop{background:rgba(4,5,10,.92);backdrop-filter:blur(6px)}
+.lente-in{
+  width:100%;height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:14px;padding:20px;
+}
+.lente img{
+  /* la larghezza massima gliela mette il JavaScript, ed e' quella VERA del
+     file: una foto da 382 px aperta a tutto schermo sarebbe una poltiglia */
+  max-height:82vh;width:auto;height:auto;border-radius:12px;
+  box-shadow:0 30px 90px rgba(0,0,0,.7);
+}
+.lente-dida{
+  color:var(--fioco);font-size:.92rem;text-align:center;max-width:60ch;margin:0;
+  text-shadow:0 1px 3px rgba(0,0,0,.8);
+}
+.lente-chiudi{
+  position:absolute;top:calc(12px + env(safe-area-inset-top));right:12px;
+  width:48px;height:48px;border-radius:50%;border:1px solid var(--bordo);
+  background:rgba(18,20,31,.8);color:var(--chiaro);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+.lente-chiudi svg{width:20px;height:20px}
+html[data-punta="mouse"] .lente-chiudi:hover{background:rgba(255,255,255,.14)}
+/* la foto si apre: si vede che e' una cosa da toccare */
+.apribile{cursor:zoom-in}
+.apribile:focus-visible{outline:2px solid var(--arancio-luce);outline-offset:3px}
+
+/* ---------- LA BARRA IN FONDO (telefono) ---------- */
+.barra{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;
+  /* il tasto che porta i soldi sta a DESTRA, dove arriva il pollice di chi
+     tiene il telefono con una mano sola */
+  grid-template-columns:1fr 1fr 1.25fr;gap:8px;
+  padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+  background:rgba(7,8,15,.95);border-top:1px solid var(--bordo);backdrop-filter:blur(14px);
+}
+.barra a{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  min-height:50px;border-radius:12px;text-decoration:none;
+  font-family:var(--tecnico);font-weight:700;font-size:.74rem;letter-spacing:.06em;
+  border:1px solid var(--bordo);color:var(--chiaro);background:rgba(255,255,255,.05);
+}
+.barra a.principale{background:var(--arancio);color:#140A00;border-color:transparent}
+.barra svg{width:18px;height:18px}
+@media (min-width:900px){.barra{display:none}}
+@media (max-width:899px){body{padding-bottom:86px}}
+</style>
+
+<!--
+  Dati strutturati (schema.org / JSON-LD): servono a far capire a Google orari,
+  indirizzo, telefono e tipo di attivita'. Devono coincidere con quello che si
+  legge in pagina: se non coincidono, Google penalizza.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Liquid Cocktail Bar",
+  "description": "Cocktail bar sulla passeggiata a mare di Alassio, in passeggiata Dino Grollero 32. Aperto tutti i giorni dalle 11.00 alle 02.00.",
+  "url": "https://fabiuz9494.github.io/liquid-cocktail-bar/",
+  "image": "https://fabiuz9494.github.io/liquid-cocktail-bar/img/og.jpg?v=1",
+  "telephone": "+390182471841",
+  "sameAs": ["https://www.instagram.com/liquidcocktailbar"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Passeggiata Dino Grollero 32",
+    "postalCode": "17021",
+    "addressLocality": "Alassio",
+    "addressRegion": "SV",
+    "addressCountry": "IT"
+  },
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Tavoli all'aperto", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Musica dal vivo", "value": true}
+  ],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification",
+     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+     "opens": "11:00", "closes": "02:00"}
+  ]
+}
+</script>
+<!-- Il voto di Google (4,5 su 453) NON sta nei dati qui sopra di proposito: un
+     voto che il sito si da' da solo Google non lo mostra, e puo' contare come
+     segnale storto. In pagina si legge, ma detto per quello che e': viene da
+     Google, con il link per andare a verificarlo. -->
+</head>
+
+<body>
+
+<header id="hdr">
+  <a class="marchio" href="#top" aria-label="Liquid Cocktail Bar, torna in cima">
+    <img src="img/logo.png" alt="Liquid Cocktail Bar" width="1359" height="667">
+  </a>
+  <nav class="nav" aria-label="Sezioni del sito">
+    <a href="#bancone">Cocktail</a>
+    <a href="#tavola"><span class="lungo">Da mangiare</span><span class="corto">Mangiare</span></a>
+    <a href="#dove"><span class="lungo">Dove siamo</span><span class="corto">Dove</span></a>
+  </nav>
+  <a class="hdr-tel js-tel" href="tel:+390182471841">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+    0182 471841
+  </a>
+</header>
+
+<main>
+
+<!-- =================== APERTURA =================== -->
+<section id="top" class="hero">
+  <!-- ogni luce e' due pezzi: quello di fuori la porta a destra e a sinistra,
+       quello di dentro su e giu'. Due dondolii con tempi diversi, e la strada
+       che ne esce non e' mai la stessa e non ha spigoli -->
+  <div class="hero-luci" aria-hidden="true">
+    <i class="luce-1"><b></b></i><i class="luce-2"><b></b></i>
+    <i class="luce-3"><b></b></i><i class="luce-4"><b></b></i>
+  </div>
+
+  <div class="hero-in wrap">
+    <div class="stato" data-stato="aperto">
+      <span class="pallino" aria-hidden="true"></span>
+      <span id="stato-riga">Tutti i&nbsp;giorni fino alle&nbsp;2</span>
+    </div>
+
+    <h1>
+      <img src="img/logo.png" alt="Liquid Cocktail Bar" width="1359" height="667">
+      <span class="h1-sotto"><span class="viva">Cocktail bar</span> sulla passeggiata di&nbsp;Alassio</span>
+    </h1>
+
+    <p class="hero-riga">Tavoli fuori davanti al&nbsp;mare, musica dal&nbsp;vivo e&nbsp;il&nbsp;bancone acceso fino a&nbsp;notte. Si&nbsp;apre alle 11 del&nbsp;mattino, tutti&nbsp;i&nbsp;giorni.</p>
+
+    <div class="tasti">
+      <a class="tasto tasto-pieno js-tel" href="tel:+390182471841">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        Chiama il bar
+      </a>
+      <a class="tasto tasto-vuoto" href="https://www.instagram.com/liquidcocktailbar" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.4"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+        Guarda su Instagram
+      </a>
+    </div>
+
+    <a class="voto" href="https://share.google/Lp8qipuJ4kNmjB4BI" target="_blank" rel="noopener">
+      <span class="stelle" aria-hidden="true">★★★★★</span>
+      <b>4,5</b> su&nbsp;Google&nbsp;·&nbsp;453&nbsp;recensioni
+    </a>
+  </div>
+
+  <!-- la striscia scorre: le foto sono le stesse, ripetute due volte, cosi' il
+       giro si chiude senza salti (si trasla del 50%) -->
+  <div class="striscia" aria-hidden="true">
+    <div class="striscia-in">
+      <figure><img src="img/volta.jpg" alt="" width="382" height="510" loading="lazy"></figure>
+      <figure><img src="img/bancone.jpg" alt="" width="680" height="453" loading="lazy"></figure>
+      <figure><img src="img/p-fichi.jpg" alt="" width="1000" height="1000" loading="lazy"></figure>
+      <figure><img src="img/lounge.jpg" alt="" width="382" height="510" loading="lazy"></figure>
+      <figure><img src="img/barista.jpg" alt="" width="640" height="352" loading="lazy"></figure>
+      <figure><img src="img/p-insalata.jpg" alt="" width="1000" height="1000" loading="lazy"></figure>
+      <figure><img src="img/ingresso.jpg" alt="" width="382" height="510" loading="lazy"></figure>
+      <figure><img src="img/p-mare.jpg" alt="" width="1000" height="1000" loading="lazy"></figure>
+      <figure><img src="img/volta.jpg" alt="" width="382" height="510" loading="lazy"></figure>
+      <figure><img src="img/bancone.jpg" alt="" width="680" height="453" loading="lazy"></figure>
+      <figure><img src="img/p-fichi.jpg" alt="" width="1000" height="1000" loading="lazy"></figure>
+      <figure><img src="img/lounge.jpg" alt="" width="382" height="510" loading="lazy"></figure>
+      <figure><img src="img/barista.jpg" alt="" width="640" height="352" loading="lazy"></figure>
+      <figure><img src="img/p-insalata.jpg" alt="" width="1000" height="1000" loading="lazy"></figure>
+      <figure><img src="img/ingresso.jpg" alt="" width="382" height="510" loading="lazy"></figure>
+      <figure><img src="img/p-mare.jpg" alt="" width="1000" height="1000" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ADESSO =================== -->
+<div class="adesso" data-stato="aperto">
+  <div class="wrap">
+    <div class="adesso-testo">
+      <span id="adesso-riga">Aperti tutti i&nbsp;giorni, dalle 11 alle&nbsp;2</span>
+      <span id="adesso-sotto">Si&nbsp;entra senza prenotare ·&nbsp;per&nbsp;i&nbsp;tavoli fuori conviene&nbsp;una&nbsp;telefonata</span>
+    </div>
+    <div class="adesso-orario"><b>11 → 02</b> <span>sette giorni su sette</span></div>
+  </div>
+</div>
+
+<!-- =================== AL BANCONE =================== -->
+<!-- questa sezione sta dentro la colonna stretta: le foto del bancone sono
+     piccole di file, e in una griglia larga 1160 resterebbe mezzo schermo vuoto
+     a destra invece che un margine uguale ai due lati -->
+<section id="bancone" class="sez-scura">
+  <div class="stretto rv">
+    <div class="testa-sez">
+      <p class="etichetta">Il bancone</p>
+      <!-- legare "si fa mentre lo guardi" tutto insieme (come fa --sistema da
+           solo) crea una parola piu' larga dello schermo: a 390 px sfonda -->
+      <h2><span class="viva">Il&nbsp;gin&nbsp;tonic</span> si fa mentre&nbsp;lo&nbsp;guardi</h2>
+      <p class="occhiello">Bottiglieria a&nbsp;vista, ghiaccio e&nbsp;bicchiere freddo: si&nbsp;ordina al&nbsp;banco e&nbsp;si&nbsp;beve lì,&nbsp;oppure ai&nbsp;tavoli sotto la&nbsp;volta. Chi&nbsp;ci&nbsp;è&nbsp;stato, su&nbsp;Google, ha&nbsp;segnalato proprio questo: «Ottimi&nbsp;cocktail».</p>
+    </div>
+
+    <div class="bancone-griglia">
+      <div class="bancone-col">
+        <figure class="foto foto-cocktail">
+          <img src="img/cocktail.jpg" alt="Gin tonic al bancone del Liquid, con il gin e l'acqua tonica accanto al bicchiere" width="900" height="837" loading="lazy">
+          <figcaption>Gin&nbsp;tonic al&nbsp;banco, con&nbsp;la&nbsp;bottiglieria&nbsp;dietro.</figcaption>
+        </figure>
+        <!-- MODIFICA QUI — LA CARTA DEI COCKTAIL.
+             ATTENZIONE: questi sei cocktail sono INVENTATI. Sono classici che
+             qualsiasi bancone attrezzato fa, messi qui per far vedere come
+             funziona la carta che si apre — NON sono la carta del Liquid.
+             Serve dal titolare: i cocktail della casa (nome e cosa c'e'
+             dentro), i prezzi, e se c'e' una carta stampata o una lavagna.
+             Finche' non arrivano, in fondo alla carta resta scritto che e' un
+             esempio: chi legge non deve poterla scambiare per quella vera. -->
+        <details class="carta">
+          <summary>
+            <span class="rombo" aria-hidden="true"></span>
+            Carta dei cocktail
+            <svg class="frec" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="carta-in">
+            <dl>
+              <dt>Negroni</dt>
+              <dd>Gin, vermouth rosso e bitter in parti uguali. Scorza d'arancia.</dd>
+              <dt>Gin tonic</dt>
+              <dd>Gin, acqua tonica, ghiaccio abbondante e una fetta di lime.</dd>
+              <dt>Spritz</dt>
+              <dd>Bitter all'arancia, bollicine e una spruzzata di soda. Oliva.</dd>
+              <dt>Moscow mule</dt>
+              <dd>Vodka, ginger beer e lime, servito nel rame.</dd>
+              <dt>Americano</dt>
+              <dd>Bitter, vermouth rosso e soda. Il più leggero della casa.</dd>
+              <dt>Daiquiri</dt>
+              <dd>Rum bianco, lime e zucchero, shakerato.</dd>
+            </dl>
+            <p class="avviso">Carta d'esempio, per far vedere come si apre: quella vera la scrive il locale.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="bancone-col">
+        <figure class="foto foto-bancone">
+          <img src="img/bancone.jpg" alt="Il bancone del Liquid sotto la volta, con le lampade tonde e le luci turchesi" width="680" height="453" loading="lazy">
+          <figcaption>Il&nbsp;bancone lungo sotto la&nbsp;volta, con&nbsp;le&nbsp;lampade&nbsp;tonde.</figcaption>
+        </figure>
+        <figure class="foto foto-barista">
+          <img src="img/barista.jpg" alt="Il barista del Liquid al lavoro dietro al bancone, davanti alle bottiglie" width="640" height="352" loading="lazy">
+          <figcaption>Dietro al&nbsp;banco, davanti alla&nbsp;bottiglieria.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== DA MANGIARE =================== -->
+<section id="tavola" class="sez-notte">
+  <div class="wrap rv">
+    <div class="tavola-alto">
+      <div>
+        <p class="etichetta ciano">Da mangiare</p>
+        <h2>Taglieri, panini&nbsp;e&nbsp;insalatone</h2>
+        <p class="occhiello">Roba da&nbsp;accompagnare al&nbsp;bicchiere, servita anche ai&nbsp;tavoli fuori: salumi e&nbsp;formaggi, carpacci, panini imbottiti, insalate&nbsp;grandi.</p>
+      </div>
+      <figure class="foto foto-mare">
+        <img src="img/p-mare.jpg" alt="Un panino imbottito su un tavolo di legno, sullo sfondo il mare e gli ombrelloni di Alassio" width="1000" height="1000" loading="lazy">
+        <figcaption>Dal&nbsp;tavolo si&nbsp;vede il&nbsp;mare: siamo sulla&nbsp;passeggiata.</figcaption>
+      </figure>
+    </div>
+
+    <!-- MODIFICA QUI — IL MENU'.
+         Le didascalie qui sotto dicono soltanto quello che si vede nella foto,
+         perche' i nomi veri dei piatti non li sappiamo. Servono dal titolare:
+         nome esatto di ogni piatto e prezzo. -->
+    <div class="piatti">
+      <figure>
+        <img src="img/p-fichi.jpg" alt="Vassoio di salumi con fichi e formaggio fresco" width="1000" height="1000" loading="lazy">
+        <figcaption>Salumi, fichi e&nbsp;formaggio&nbsp;fresco</figcaption>
+      </figure>
+      <figure>
+        <img src="img/p-carpaccio.jpg" alt="Carpaccio con scaglie di formaggio, insalata e fettine di mela" width="1000" height="1000" loading="lazy">
+        <figcaption>Carpaccio con&nbsp;scaglie&nbsp;e&nbsp;mela</figcaption>
+      </figure>
+      <figure>
+        <img src="img/p-ardesia.jpg" alt="Tagliere di ardesia con formaggio, pomodori secchi e spinacino" width="1000" height="1000" loading="lazy">
+        <figcaption>Tagliere di ardesia</figcaption>
+      </figure>
+      <figure>
+        <img src="img/p-focaccia.jpg" alt="Focaccia farcita tagliata a meta' e servita nel piatto" width="1000" height="1000" loading="lazy">
+        <figcaption>Focaccia farcita, tagliata&nbsp;a&nbsp;metà</figcaption>
+      </figure>
+      <figure>
+        <img src="img/p-insalata.jpg" alt="Insalata grande con gamberi, ananas e due salsine" width="1000" height="1000" loading="lazy">
+        <figcaption>Insalatona con&nbsp;gamberi&nbsp;e&nbsp;ananas</figcaption>
+      </figure>
+      <figure>
+        <img src="img/p-roastbeef.jpg" alt="Piatto di roast beef con piadina, insalata e formaggi" width="1000" height="1000" loading="lazy">
+        <figcaption>Roast beef, piadina&nbsp;e&nbsp;formaggi</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- =================== IL LOCALE =================== -->
+<section id="locale" class="sez-scura">
+  <div class="wrap rv">
+    <div class="testa-sez">
+      <p class="etichetta magenta">Il locale</p>
+      <!-- Accorciato: «Una volta di mattoni, e le luci che cambiano» a 390 px
+           non sta in due righe, e legato dai &nbsp; sfondava il bordo destro
+           su iPhone. I mattoni li racconta la riga qui sotto. -->
+      <h2>Sotto la volta, <span class="viva">luci che&nbsp;cambiano</span></h2>
+      <p class="occhiello">Dentro è&nbsp;una&nbsp;cantina a&nbsp;volta di&nbsp;mattoni: divani, tavolini bassi e&nbsp;il&nbsp;bancone illuminato. Fuori, l'ingresso sul&nbsp;vicolo con&nbsp;l'insegna&nbsp;tonda.</p>
+    </div>
+
+    <div class="mosaico">
+      <figure>
+        <img src="img/volta.jpg" alt="La volta del Liquid illuminata di fucsia, con il bancone acceso di blu" width="382" height="510" loading="lazy">
+        <figcaption>La&nbsp;volta accesa&nbsp;di&nbsp;fucsia</figcaption>
+      </figure>
+      <figure>
+        <img src="img/lounge.jpg" alt="Angolo del Liquid con il divano arancione e il tavolino, sotto la volta" width="382" height="510" loading="lazy">
+        <figcaption>L'angolo col divano</figcaption>
+      </figure>
+      <figure>
+        <img src="img/ingresso.jpg" alt="L'ingresso del Liquid: porta blu e insegna tonda sul vicolo" width="382" height="510" loading="lazy">
+        <figcaption>L'ingresso, sul vicolo</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- =================== LE SERATE =================== -->
+<section id="serate" class="sez-notte">
+  <div class="wrap rv">
+    <div class="serate">
+      <div>
+        <p class="etichetta">Le serate</p>
+        <h2>Musica <span class="viva">dal&nbsp;vivo</span></h2>
+        <p class="occhiello">È&nbsp;uno&nbsp;dei&nbsp;tre&nbsp;servizi che&nbsp;Google segnala del&nbsp;Liquid, insieme ai&nbsp;tavoli all'aperto&nbsp;e&nbsp;ai&nbsp;cocktail.</p>
+        <!-- MODIFICA QUI — LE SERATE.
+             Serve dal titolare: quali giorni c'e' la musica dal vivo, che
+             genere, se ci sono dj o gruppi fissi, se le serate si annunciano
+             su Instagram. Con quelle risposte questa sezione diventa un
+             calendario e vale il doppio. -->
+        <div class="nota" style="margin-top:20px">
+          <b>Mancano i giorni.</b><br>
+          Appena sappiamo quando suonano dal&nbsp;vivo, qui&nbsp;va&nbsp;il&nbsp;calendario della settimana —&nbsp;è&nbsp;la&nbsp;cosa che&nbsp;la&nbsp;gente cerca prima&nbsp;di&nbsp;uscire.
+        </div>
+      </div>
+      <figure class="foto foto-staff">
+        <img src="img/staff.jpg" alt="Il gruppo del Liquid con le braccia alzate sotto l'insegna del locale" width="1400" height="934" loading="lazy">
+        <figcaption>Chi&nbsp;c'è&nbsp;dietro&nbsp;al&nbsp;bancone.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- =================== RECENSIONI =================== -->
+<section id="recensioni" class="sez-scura">
+  <div class="wrap rv">
+    <div class="testa-sez">
+      <p class="etichetta">Cosa dicono</p>
+      <div class="voto-grande">
+        <span class="voto-num">4,5</span>
+        <span class="voto-lato">su&nbsp;Google&nbsp;·&nbsp;453&nbsp;recensioni</span>
+      </div>
+    </div>
+
+    <!-- MODIFICA QUI — LE RECENSIONI VERE.
+         Queste tre sono di esempio e vanno sostituite con tre recensioni
+         vere prese dalla scheda Google, con il nome di chi le ha scritte. -->
+    <div class="recensioni">
+      <div class="rec">
+        <p>«Testo della recensione vera, presa dalla scheda&nbsp;Google.»</p>
+        <p class="chi">Nome · su Google</p>
+      </div>
+      <div class="rec">
+        <p>«Testo della recensione vera, presa dalla scheda&nbsp;Google.»</p>
+        <p class="chi">Nome · su Google</p>
+      </div>
+      <div class="rec">
+        <p>«Testo della recensione vera, presa dalla scheda&nbsp;Google.»</p>
+        <p class="chi">Nome · su Google</p>
+      </div>
+    </div>
+
+    <div class="tasti" style="justify-content:flex-start;margin-top:24px">
+      <a class="tasto tasto-vuoto" href="https://share.google/Lp8qipuJ4kNmjB4BI" target="_blank" rel="noopener">Leggile tutte su Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== DOVE SIAMO =================== -->
+<section id="dove" class="sez-notte">
+  <div class="wrap rv">
+    <div class="testa-sez">
+      <p class="etichetta ciano">Dove siamo</p>
+      <h2>Passeggiata Dino Grollero&nbsp;32</h2>
+    </div>
+
+    <div class="dove">
+      <div class="dati">
+        <div class="dato">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10.5c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.3" r="2.9"/></svg>
+          <div>
+            <b>Indirizzo</b>
+            <a href="https://share.google/Lp8qipuJ4kNmjB4BI" target="_blank" rel="noopener">Passeggiata Dino Grollero 32, 17021 Alassio&nbsp;(SV)</a>
+          </div>
+        </div>
+        <div class="dato">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          <div>
+            <b>Telefono</b>
+            <a class="js-tel" href="tel:+390182471841">0182 471841</a>
+          </div>
+        </div>
+        <!-- MODIFICA QUI — MAIL E FACEBOOK.
+             Serve dal titolare: un indirizzo mail del locale, e se esiste una
+             PAGINA Facebook del bar (il link che abbiamo porta al profilo
+             personale di Giorgio Schivo, non al locale). Serve anche sapere se
+             c'e' un numero WhatsApp: oggi c'e' solo il fisso, quindi in tutto
+             il sito non compare nessun tasto WhatsApp. -->
+
+        <div class="social">
+          <a href="https://www.instagram.com/liquidcocktailbar" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.4"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/giorgio.schivo/?locale=it_IT" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.4h2.5l.4-2.9h-2.9V8.9c0-.8.2-1.4 1.4-1.4h1.5V4.9c-.3 0-1.2-.1-2.2-.1-2.1 0-3.6 1.3-3.6 3.7v2.2H8v2.9h2.6V21h2.9Z"/></svg>
+            Facebook
+          </a>
+          <a href="https://share.google/Lp8qipuJ4kNmjB4BI" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10.5c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.3" r="2.9"/></svg>
+            Aprilo nelle mappe
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <table class="orari">
+          <thead><tr><th scope="col">Giorno</th><th scope="col" style="text-align:right">Orario</th></tr></thead>
+          <tbody>
+            <tr><td>Lunedì</td><td>11 – 02</td></tr>
+            <tr><td>Martedì</td><td>11 – 02</td></tr>
+            <tr><td>Mercoledì</td><td>11 – 02</td></tr>
+            <tr><td>Giovedì</td><td>11 – 02</td></tr>
+            <tr><td>Venerdì</td><td>11 – 02</td></tr>
+            <tr><td>Sabato</td><td>11 – 02</td></tr>
+            <tr><td>Domenica</td><td>11 – 02</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap piede">
+    <img src="img/logo.png" alt="Liquid Cocktail Bar" width="1359" height="667" loading="lazy">
+    <small>
+      Passeggiata Dino Grollero 32, 17021 Alassio (SV)&nbsp;·&nbsp;0182&nbsp;471841<br>
+      <!-- MODIFICA QUI — ragione sociale e partita IVA del locale -->
+      Ragione sociale e&nbsp;partita&nbsp;IVA:&nbsp;da&nbsp;inserire.
+    </small>
+  </div>
+</footer>
+
+<!-- la foto aperta in grande: una sola, il contenuto glielo mette il JavaScript -->
+<dialog class="lente" id="lente" aria-label="Foto ingrandita">
+  <div class="lente-in">
+    <img id="lente-img" src="" alt="">
+    <p class="lente-dida" id="lente-dida"></p>
+  </div>
+  <button class="lente-chiudi" id="lente-chiudi" aria-label="Chiudi la foto">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+</dialog>
+
+<!-- la barra in fondo: sul telefono i tasti che contano stanno dove arriva il
+     pollice, non in cima -->
+<nav class="barra" aria-label="Contatti rapidi">
+  <a href="https://www.instagram.com/liquidcocktailbar" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.4"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+    Instagram
+  </a>
+  <a href="https://share.google/Lp8qipuJ4kNmjB4BI" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10.5c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.3" r="2.9"/></svg>
+    Mappa
+  </a>
+  <a class="principale js-tel" href="tel:+390182471841">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+    Chiama
+  </a>
+</nav>
+
+<script>
+/* ============ 1. PERSONALIZZA I DATI DEL CLIENTE QUI ============ */
+const CFG = {
+  telefono: "+390182471841",          // il numero della scheda Google
+  whatsapp: "",                       // il bar ha solo il fisso: niente WhatsApp
+  // Gli orari stanno scritti QUI e in un posto solo: 0 = lunedì.
+  // Ogni turno è [apre, chiude] in minuti dalla mezzanotte. Il Liquid chiude
+  // alle 2 di NOTTE, quindi la chiusura vale 26:00 (24 + 2): il conto qui
+  // sotto sa gestire i turni che passano la mezzanotte.
+  // Se cambiano, si cambiano qui E nella tabella degli orari.
+  orari: [
+    [[11*60, 26*60]],   // lunedì
+    [[11*60, 26*60]],   // martedì
+    [[11*60, 26*60]],   // mercoledì
+    [[11*60, 26*60]],   // giovedì
+    [[11*60, 26*60]],   // venerdì
+    [[11*60, 26*60]],   // sabato
+    [[11*60, 26*60]]    // domenica
+  ]
+};
+/* =============================================================== */
+
+// --- i tasti che chiamano ---
+document.querySelectorAll('.js-tel').forEach(a=>{
+  a.href = "tel:" + CFG.telefono.replace(/\s/g,'');
+});
+
+// --- come si sta toccando la pagina: dito o mouse ---
+// @media (hover:hover) dice solo se il computer HA un mouse, non se lo stai
+// usando: su un portatile touch l'alone resterebbe appiccicato dove hai toccato.
+addEventListener('pointerdown', e=>{
+  if(e.pointerType !== 'mouse') document.documentElement.dataset.punta = 'dito';
+}, true);
+addEventListener('pointermove', e=>{
+  if(e.pointerType === 'mouse') document.documentElement.dataset.punta = 'mouse';
+}, true);
+
+// --- testata che si "posa" quando si scorre ---
+const hdr = document.getElementById('hdr');
+if(hdr) addEventListener('scroll', ()=> hdr.classList.toggle('stuck', scrollY > 30), {passive:true});
+
+// --- comparsa allo scorrimento ---
+const io = new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.10, rootMargin:"0px 0px -6% 0px"});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// --- la striscia dell'apertura: cammina da sola, e si trascina col dito ----
+// Le foto nell'HTML sono scritte DUE volte: quando lo scorrimento arriva a
+// meta' si torna indietro di meta', e siccome li' c'e' la stessa foto non si
+// vede nessun salto — il giro sembra infinito.
+(function(){
+  const s = document.querySelector('.striscia');
+  if(!s) return;
+  const lento = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let mano = false, riprendi = 0, ultimo = 0;
+
+  function passo(ora){
+    const dt = ultimo ? Math.min(64, ora - ultimo) : 16;
+    ultimo = ora;
+    const meta = s.scrollWidth / 2;
+    if(!lento && !mano && !s.dataset.ferma && ora > riprendi && meta > 0){
+      s.scrollLeft += dt * 0.035;          // ~35 px al secondo, come una passeggiata
+      if(s.scrollLeft >= meta) s.scrollLeft -= meta;
+    }
+    requestAnimationFrame(passo);
+  }
+  requestAnimationFrame(passo);
+
+  // col dito il trascinamento lo fa gia' il browser: qui si ferma solo il
+  // movimento automatico mentre si tocca, e si riparte dopo un attimo
+  s.addEventListener('pointerdown', e => {
+    mano = true; s.classList.add('presa');
+    if(e.pointerType === 'mouse'){
+      s.dataset.x = e.clientX; s.dataset.sl = s.scrollLeft;
+      // senza la cattura, appena il puntatore esce dalla striscia il browser
+      // manda "pointercancel" e il trascinamento si pianta a meta'
+      try{ s.setPointerCapture(e.pointerId); }catch(_){}
+      e.preventDefault();
+    }
+  });
+  // passive: cosi' il browser sa che non blocchero' mai il gesto e puo' far
+  // scorrere la striscia col dito senza stare ad aspettare il JavaScript
+  s.addEventListener('pointermove', e => {
+    if(!mano || e.pointerType !== 'mouse') return;   // col dito fa tutto il browser
+    s.scrollLeft = Number(s.dataset.sl) - (e.clientX - Number(s.dataset.x));
+  }, {passive:true});
+  const lascia = () => {
+    if(!mano) return;
+    mano = false; s.classList.remove('presa');
+    riprendi = performance.now() + 1400;   // un attimo di calma prima di ripartire
+  };
+  addEventListener('pointerup', lascia);
+  addEventListener('pointercancel', lascia);
+  // se si trascina oltre la meta' si rientra, cosi' il giro non finisce mai
+  s.addEventListener('scroll', () => {
+    const meta = s.scrollWidth / 2;
+    if(s.scrollLeft >= meta * 2 - 2) s.scrollLeft -= meta;
+    else if(s.scrollLeft <= 0) s.scrollLeft += meta;
+  }, {passive:true});
+})();
+
+// --- le foto si aprono in grande ------------------------------------------
+// Vale per tutte le foto vere del sito (piatti, locale, bancone, gruppo); la
+// striscia dell'apertura no: quella e' decorativa e le foto sono ripetute.
+(function(){
+  const lente = document.getElementById('lente');
+  const dentro = document.getElementById('lente-img');
+  const dida = document.getElementById('lente-dida');
+  // se il browser non sa aprire le finestre di serie si lascia tutto com'e':
+  // meglio una foto che non si ingrandisce che una che si apre a meta'
+  if(!lente || !dentro || typeof lente.showModal !== 'function') return;
+
+  // le foto della striscia restano fuori: sono decorative, sono ripetute due
+  // volte, e soprattutto trascinandola il dito lascia partire un click — la
+  // foto si apriva in faccia a chi stava solo scorrendo
+  const foto = [...document.querySelectorAll('main figure img')]
+    .filter(img => !img.closest('.striscia'));
+  foto.forEach(img => {
+    img.classList.add('apribile');
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    const apri = () => {
+      dentro.src = img.currentSrc || img.src;
+      dentro.alt = img.alt || '';
+      // mai piu' grande dei pixel che il file ha davvero, se no sgrana
+      const veri = img.naturalWidth || parseInt(img.getAttribute('width'), 10) || 1200;
+      dentro.style.maxWidth = 'min(94vw, ' + veri + 'px)';
+      const cap = img.closest('figure').querySelector('figcaption');
+      dida.textContent = cap ? cap.textContent.trim() : '';
+      lente.showModal();
+    };
+    // un dito che scorre la pagina passa sopra le foto e lascia partire un
+    // click: si apre solo se il puntatore e' rimasto praticamente fermo
+    let px = 0, py = 0;
+    img.addEventListener('pointerdown', e => { px = e.clientX; py = e.clientY; });
+    img.addEventListener('click', e => {
+      if(Math.abs(e.clientX - px) > 8 || Math.abs(e.clientY - py) > 8) return;
+      apri();
+    });
+    img.addEventListener('keydown', e => {
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); apri(); }
+    });
+  });
+
+  const chiudi = () => lente.close();
+  document.getElementById('lente-chiudi').addEventListener('click', chiudi);
+  dentro.addEventListener('click', chiudi);
+  // toccare fuori dalla foto chiude: il click sul <dialog> stesso arriva solo
+  // quando si e' toccato lo sfondo, non il contenuto
+  lente.addEventListener('click', e => { if(e.target === lente) chiudi(); });
+  lente.querySelector('.lente-in').addEventListener('click', e => {
+    if(e.target !== dentro) chiudi();
+  });
+  lente.addEventListener('close', () => { dentro.src = ''; });
+})();
+
+// --- le luci dell'apertura si fermano quando l'apertura non si vede piu' ---
+const luci = document.querySelector('.hero-luci');
+if(luci){
+  new IntersectionObserver(([e]) => {
+    luci.classList.toggle('ferme', !e.isIntersecting);
+    // ferma anche la striscia: muovere roba che nessuno vede consuma batteria
+    const s = document.querySelector('.striscia');
+    if(s){ if(e.isIntersecting) delete s.dataset.ferma; else s.dataset.ferma = '1'; }
+  }).observe(document.getElementById('top'));
+}
+
+// --- evidenzia il giorno di oggi nella tabella orari ---
+const righe = document.querySelectorAll('.orari tbody tr');
+const idxOggi = (new Date().getDay() + 6) % 7;   // 0 = lunedì
+if(righe[idxOggi]) righe[idxOggi].classList.add('oggi');
+
+// --- aperto o chiuso, calcolato dagli orari di CFG --------------------------
+// Se il JavaScript non parte restano le frasi scritte nell'HTML, che valgono
+// sempre ("Aperti tutti i giorni, dalle 11 alle 2"): non si perde niente.
+(function(){
+  const box   = document.querySelector('.adesso');
+  const riga  = document.getElementById('adesso-riga');
+  const sotto = document.getElementById('adesso-sotto');
+  const pill  = document.querySelector('.stato');
+  const pillR = document.getElementById('stato-riga');
+  if(!box || !riga || !sotto) return;
+
+  const GIORNI = ['lunedì','martedì','mercoledì','giovedì','venerdì','sabato','domenica'];
+  const ora = m => { const h = Math.floor(m/60) % 24; const q = m % 60;
+                     return h + (q ? ':' + String(q).padStart(2,'0') : ''); };
+
+  function stato(){
+    const d = new Date();
+    const g = (d.getDay()+6)%7;                 // 0 = lunedì
+    const m = d.getHours()*60 + d.getMinutes();
+
+    // turno cominciato IERI e finito dopo la mezzanotte (es. 11 → 02)
+    const ieri = CFG.orari[(g+6)%7] || [];
+    for(const t of ieri){
+      if(t[1] > 24*60 && m < t[1] - 24*60) return {aperto:true, chiude:t[1] - 24*60};
+    }
+    // turno di oggi
+    const oggi = CFG.orari[g] || [];
+    for(const t of oggi){
+      if(m >= t[0] && m < t[1]) return {aperto:true, chiude:t[1]};
+    }
+    const dopo = oggi.find(t => t[0] > m);
+    if(dopo) return {aperto:false, apre:dopo[0], quando:'oggi'};
+    for(let i=1;i<=7;i++){
+      const gg = (g+i)%7, turni = CFG.orari[gg] || [];
+      if(turni.length) return {aperto:false, apre:turni[0][0], quando: i===1 ? 'domani' : GIORNI[gg]};
+    }
+    return {aperto:false};
+  }
+
+  function aggiorna(){
+    const s = stato();
+    if(s.aperto){
+      const restano = s.chiude - (new Date().getHours()*60 + new Date().getMinutes());
+      const ultimo = restano > 0 && restano <= 45;
+      box.dataset.stato = ultimo ? 'ultimo' : 'aperto';
+      if(pill) pill.dataset.stato = 'aperto';
+      riga.textContent  = ultimo ? 'Ultimo giro: si chiude alle ' + ora(s.chiude)
+                                 : 'Aperto adesso, fino alle ' + ora(s.chiude);
+      sotto.textContent = 'Si entra senza prenotare · per i tavoli fuori conviene una telefonata';
+      if(pillR) pillR.textContent = ultimo ? 'Ultimo giro' : 'Aperto adesso';
+      return;
+    }
+    box.dataset.stato = 'chiuso';
+    if(pill) pill.dataset.stato = 'chiuso';
+    riga.textContent = 'Ora siamo chiusi';
+    sotto.textContent = s.apre !== undefined
+      ? (s.quando === 'oggi' ? 'Si apre oggi alle ' + ora(s.apre)
+                             : 'Si riapre ' + s.quando + ' alle ' + ora(s.apre))
+      : 'Gli orari sono qui sotto';
+    if(pillR) pillR.textContent = s.apre !== undefined ? 'Riapre alle ' + ora(s.apre) : 'Ora chiuso';
+  }
+
+  aggiorna();
+  setInterval(aggiorna, 60000);   // la scritta resta vera anche se la pagina sta aperta
+})();
+</script>
+</body>
+</html>
